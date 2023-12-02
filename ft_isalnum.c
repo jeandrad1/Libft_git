@@ -14,7 +14,10 @@
 
 int	ft_isalnum(int c)
 {
+/*
 	if (c >= '0' && c <= '9')
+*/
+	if(ft_isdigit(c))
 		return (1);
 	if (c <= 'z' && c >= 'a')
 		return (1);
@@ -28,7 +31,7 @@ int	ft_isalnum(int c)
 #include <ctype.h>
 int main()
 {
-	printf("ft_isalnum: %i\n", ft_isalnum(':'));
-	printf("isalnum: %i\n", isalnum(':'));
+	printf("ft_isalnum: %i\n", ft_isalnum('k'));
+	printf("isalnum: %i\n", isalnum('k'));
 	return (0);
 }
