@@ -1,3 +1,6 @@
+
+#include "libft.h"
+
 void ft_memset(char *str, int c, unsigned int n)
 {
 	int i;

@@ -1,3 +1,6 @@
+
+#include "libft.h"
+
 int toupper(int ch)
 {
     if (ch <= 122 && ch >= 97)

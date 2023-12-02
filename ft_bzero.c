@@ -1,3 +1,6 @@
+
+#include "libft.h"
+
 void bzero(char *str, int n)
 {
 	int i;

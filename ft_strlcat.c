@@ -1,3 +1,6 @@
+
+#include "libft.h"
+
 int ft_strlcat(char *dst, const char *src, int size)
 {
 	int dst_len;

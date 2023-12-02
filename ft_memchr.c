@@ -1,3 +1,6 @@
+
+#include "libft.h"
+
 void *memchr(const void *str, int c, int n)
 {
     const unsigned char *p = str;
