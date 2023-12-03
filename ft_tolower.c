@@ -1,37 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/27 12:23:51 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/03 11:45:25 by jeandrad         ###   ########.fr       */
+/*   Created: 2023/12/03 12:46:33 by jeandrad          #+#    #+#             */
+/*   Updated: 2023/12/03 12:49:13 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_isalpha(int c)
+int	ft_tolower(int ch)
 {
-	if (c <= 'z' && c >= 'a')
-		return (1);
-	if (c <= 'Z' && c >= 'A')
-		return (1);
-	else
-		return (0);
+	if (ch <= 90 && ch >= 65)
+		ch = ch + 32;
+	return (ch);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-	int i = 0;
-	while (i < 253){
-		printf("ft_isalpha: %i\t", ft_isalpha(i));
-		printf("isalpha: %i\n", isalpha(i));
-		i++;
-	}
-	return (0);
-}
-*/

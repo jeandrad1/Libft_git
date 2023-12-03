@@ -20,6 +20,7 @@ int	ft_isprint(int c)
 		return (0);
 }
 
+/*
 #include <stdio.h>
 #include <ctype.h>
 int main()
@@ -27,9 +28,10 @@ int main()
 	int i = 0;
 	while (i < 250)
 	{
-		printf("For %i ft_isprint: %i\t",i, ft_isprint(i));
-		printf("For %i isprint: %i\n",i, isprint(i));
+		printf("ft_isprint: %i\t", ft_isprint(i));
+		printf("isprint: %i\n",isprint(i));
 		i++;
 	}
 	return (0);
 }
+*/

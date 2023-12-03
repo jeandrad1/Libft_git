@@ -11,9 +11,8 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
-size_t	ft_strlen(const char *str)
+unsigned long int	ft_strlen(const char *str)
 {
 	unsigned long int	i;
 
@@ -22,11 +21,13 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
+/*
 #include <stdio.h>
 #include <string.h>
 int main()
 {
-	printf("Length: %lu\n", ft_strlen("kjhgfd"));
-	printf("Length: %lu\n", strlen("kjhgfd"));	
+	printf("Length: %lu\n", ft_strlen("qwerty "));
+	printf("Length: %lu\n", strlen("qwerty "));	
 	return (0);
 }
+*/
