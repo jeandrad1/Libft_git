@@ -1,17 +1,20 @@
 
 #include "libft.h"
+#include <stddef.h>
 
-void ft_memset(char *str, int c, unsigned int n)
+void *ft_memset(void *str, int c, size_t n)
 {
-	int i;
+	size_t i;
 
 	i = 0;
-	while (str[i] != '\0' && i < n)
+	while (i < n)
 	{
-		str[i] = c;
+		((unsigned char *)str)[i] = c;
 		i++;
 	}
+	return (str);
 }
+/*
 #include <stdio.h>
 #include <string.h>
 int main()
@@ -22,3 +25,4 @@ int main()
     printf("After ft_memset():  %s\n", str); 
 	return (0);
 }
+*/
