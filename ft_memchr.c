@@ -1,21 +1,32 @@
+/******************************************************************************/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/05 22:27:26 by jeandrad          #+#    #+#             */
+/*   Updated: 2023/12/05 22:33:56 by jeandrad         ###   ########.fr       */
+/*                                                                            */
+/******************************************************************************/
 
 #include "libft.h"
+#include <stdio.h>
 
-void *memchr(const void *str, int c, int n)
+void *memchr(const void *str, int c, size_t n)
 {
-    const unsigned char *p = str;
-	int i;
+    size_t i;
 
 	i = 0;
-    while (i < n )
+	while (i < n)
 	{
-        if (p[i] == (unsigned char)c)
-            return (void *)(p + i);
+		if (*(unsigned char *)&str[i] == (unsigned char)c)
+			return ((void *)&str[i]);
 		i++;
 	}
+	return (NULL);
 }
 
-#include <stdio.h>
 int main()
 {
 	char str[] = "Test of the code";
