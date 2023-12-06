@@ -1,14 +1,14 @@
-/* ************************************************************************** */
+/******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 13:52:30 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/03 13:04:32 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/06 12:21:19 by jeandrad         ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/******************************************************************************/
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -25,5 +25,12 @@ int					ft_strlcpy(char *dest, const char *src, int size);
 int					ft_toupper(int ch);
 int					ft_tolower(int ch);
 char				*ft_strchr(const char *str, int c);
+void				ft_bzero(void *str, size_t n);
+int					ft_strncmp(const char *str1, const char *str2, size_t n);
+char				*ft_strchr(const char *str, int c);
+char				*ft_strrchr(const char *str, int c);
+void				*ft_memset(void *str, int c, size_t n);
+
+
 
 #endif
