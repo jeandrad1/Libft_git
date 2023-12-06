@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 13:52:30 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/06 12:21:19 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/06 13:30:18 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -30,6 +30,7 @@ int					ft_strncmp(const char *str1, const char *str2, size_t n);
 char				*ft_strchr(const char *str, int c);
 char				*ft_strrchr(const char *str, int c);
 void				*ft_memset(void *str, int c, size_t n);
+void				*ft_memchr(const void *s, int c, size_t n);
 
 
 

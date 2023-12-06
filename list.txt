@@ -15,7 +15,7 @@ ft_tolower			Funciona -paco
 ft_strchr			Funciona -paco
 ft_strrchr			Funciona -paco
 ft_strncmp			Funciona -paco
-ft_memchr			Funciona -paco
+ft_memchr			
 ft_memcmp			
 ft_strnstr			
 ft_atoi				
