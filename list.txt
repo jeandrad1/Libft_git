@@ -21,10 +21,10 @@ ft_strchr			Funciona -paco
 ft_strrchr			Funciona -paco
 ft_strncmp			Funciona -paco
 <<<<<<< HEAD
-ft_memchr			No funciona 
+ft_memchr			Funciona 
 =======
 ft_memchr			
 >>>>>>> fb86e458cadab77659c8654238c9689182309bc8
-ft_memcmp			
+ft_memcmp			Funciona
 ft_strnstr			
 ft_atoi				
