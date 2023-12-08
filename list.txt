@@ -8,14 +8,23 @@ ft_memset			Funciona -paco
 ft_bzero			Funciona -paco
 ft_memcpy			
 ft_memmove			
+<<<<<<< HEAD
+ft_strlcpy			No funciona
+ft_strlcat			No funciona
+=======
 ft_strlcpy			
 ft_strlcat			
+>>>>>>> fb86e458cadab77659c8654238c9689182309bc8
 ft_toupper			Funciona -paco
 ft_tolower			Funciona -paco
 ft_strchr			Funciona -paco
 ft_strrchr			Funciona -paco
 ft_strncmp			Funciona -paco
+<<<<<<< HEAD
+ft_memchr			No funciona 
+=======
 ft_memchr			
+>>>>>>> fb86e458cadab77659c8654238c9689182309bc8
 ft_memcmp			
 ft_strnstr			
 ft_atoi				
