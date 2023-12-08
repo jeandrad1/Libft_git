@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/03 12:52:42 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/05 22:26:34 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/06 11:50:16 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -23,6 +23,8 @@ char	*ft_strchr(const char *str, int c)
 			return ((char*)&str[i]);
 		i++;
 	}
+	if (str[i] == (char)c)
+		return ((char*)&str[i]);
 	return (NULL);
 }
 

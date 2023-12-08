@@ -1,0 +1,21 @@
+ft_isalpha			Funciona -paco
+ft_isdigit			Funciona -paco
+ft_isalnum			Funciona -paco
+ft_isascii			Funciona -paco
+ft_isprint			Funciona -paco
+ft_strlen			Funciona -paco
+ft_memset			Funciona -paco
+ft_bzero			Funciona -paco
+ft_memcpy			
+ft_memmove			
+ft_strlcpy			No funciona
+ft_strlcat			No funciona
+ft_toupper			Funciona -paco
+ft_tolower			Funciona -paco
+ft_strchr			Funciona -paco
+ft_strrchr			Funciona -paco
+ft_strncmp			Funciona -paco
+ft_memchr			No funciona 
+ft_memcmp			
+ft_strnstr			
+ft_atoi				

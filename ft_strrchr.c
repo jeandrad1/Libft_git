@@ -1,11 +1,22 @@
+/******************************************************************************/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/06 11:38:05 by jeandrad          #+#    #+#             */
+/*   Updated: 2023/12/06 11:45:57 by jeandrad         ###   ########.fr       */
+/*                                                                            */
+/******************************************************************************/
 
 #include "libft.h"
 
-char	*ft_strrchr ( const char *str, int c)
+char	*ft_strrchr( const char *str, int c)
 {
 	int i;
 	
-	i = ft_strlen(str) - 1;
+	i = ft_strlen(str);
 	while(i > -1)
 	{
 		if (str[i] == (char)c)
@@ -15,6 +26,7 @@ char	*ft_strrchr ( const char *str, int c)
 	return (NULL);
 }
 
+/*
 #include <stdio.h>
 int main(void)
 {
@@ -30,3 +42,4 @@ int main(void)
 	
 	return 0;
 }
+*/

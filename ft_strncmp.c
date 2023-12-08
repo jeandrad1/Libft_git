@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 11:45:17 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/05 11:48:58 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/06 12:27:10 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -15,36 +15,34 @@
 
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
-	int r;
-	int i;
+	int		r;
+	size_t	i;
 
 	r = 0;
 	i = 0;
-	while (str2[i] != '\0' && i < n)
+	while ((str1[i] != '\0' || str2[i] != '\0') && i < n)
 	{
-		if (str1[i] != str2[i]){
-			r = str1[i] - str2[i];
-			if (r < 0){
-				return (-1);
-			}
-			if (r > 0){
-				return (1);
-			}
+		if (str1[i] != str2[i])
+		{
+			r = (unsigned char) str1[i] - (unsigned char) str2[i];
+			return (r);
 		}
 		i++;
 	}
-	return (0);
+	return (r);
 }
 /*
 #include <stdio.h>
-
+#include <string.h>
 int main(void) {
-	const char *str1 = "Hello";
+	const char *str1 = "Hello ";
 	const char *str2 = "Hello";
-	int result = ft_strncmp(str1, str2, 3);
+	int n = 6;
+	int result = ft_strncmp(str1, str2, n);
 	
 	printf("Result: %d\n", result);
-	
-	return 0;
+	printf("Result: %d\n", strncmp(str1,str2,n));
+
+	return (0);
 }
 */
