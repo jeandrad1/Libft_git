@@ -1,41 +1,44 @@
 /******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/09 10:25:21 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/09 10:54:24 by jeandrad         ###   ########.fr       */
+/*   Created: 2023/12/09 11:39:10 by jeandrad          #+#    #+#             */
+/*   Updated: 2023/12/09 22:41:17 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 #include "libft.h"
-#include <stddef.h>
 
-void	*ft_memset(void *str, int c, size_t n)
+int	ft_atoi(const char *str)
 {
-	unsigned char	*s;
+	int	numsign;
+	int	i;
+	int	num;
 
-	s = str;
-	while (n > 0)
+	i = 0;
+	numsign = 1;
+	num = 0;
+	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t'
+		|| str[i] == '\v' || str[i] == '\r' || str[i] == '\f')
+		i++;
+	if (str[i] == '-')
+		numsign = -1;
+	if (str[i] == '-' || str[i] == '+')
+		i++;
+	while (str[i] <= 57 && str[i] >= 48)
 	{
-		*s = (unsigned char) c;
-		s++;
-		n--;
+		num = num * 10 + (str[i] - '0');
+		i++;
 	}
-	return (str);
+	return (num * numsign);
 }
 
-/*
+
 #include <stdio.h>
-#include <string.h>
-int main()
-{
-	char str[50] = "GeeksForGeeks is for programming geeks."; 
-    printf("\nBefore ft_memset(): %s\n", str); 
-    ft_memset(str, 'k', 8); 
-    printf("After ft_memset():  %s\n", str); 
+int main(){
+	printf("%d", ft_atoi(" -1234ab567"));
 	return (0);
 }
-*/
