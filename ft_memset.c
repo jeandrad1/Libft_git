@@ -1,21 +1,32 @@
+/******************************************************************************/
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/09 10:25:21 by jeandrad          #+#    #+#             */
+/*   Updated: 2023/12/09 10:54:24 by jeandrad         ###   ########.fr       */
+/*                                                                            */
+/******************************************************************************/
 
 #include "libft.h"
 #include <stddef.h>
 
 void	*ft_memset(void *str, int c, size_t n)
 {
-	const unsigned char	*s;
+	unsigned char	*s;
 
 	s = str;
-
 	while (n > 0)
 	{
-		*s = (const unsigned char)c;
+		*s = (unsigned char) c;
 		s++;
 		n--;
 	}
 	return (str);
 }
+
 /*
 #include <stdio.h>
 #include <string.h>
@@ -23,7 +34,7 @@ int main()
 {
 	char str[50] = "GeeksForGeeks is for programming geeks."; 
     printf("\nBefore ft_memset(): %s\n", str); 
-    ft_memset(str, 0, 8); 
+    ft_memset(str, 'k', 8); 
     printf("After ft_memset():  %s\n", str); 
 	return (0);
 }

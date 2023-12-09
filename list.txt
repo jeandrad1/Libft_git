@@ -1,30 +1,21 @@
-ft_isalpha			Funciona -paco
-ft_isdigit			Funciona -paco
-ft_isalnum			Funciona -paco
-ft_isascii			Funciona -paco
-ft_isprint			Funciona -paco
-ft_strlen			Funciona -paco
-ft_memset			Funciona -paco
-ft_bzero			Funciona -paco
-ft_memcpy			
+ft_isalpha			Funciona -OK paco
+ft_isdigit			Funciona -OK paco
+ft_isalnum			Funciona -OK paco
+ft_isascii			Funciona -OK paco
+ft_isprint			Funciona -OK paco
+ft_strlen			Funciona -OK paco
+ft_memset			Funciona -OK paco
+ft_bzero			Funciona -OK paco
+ft_memcpy			No funciona
 ft_memmove			
-<<<<<<< HEAD
 ft_strlcpy			No funciona
 ft_strlcat			No funciona
-=======
-ft_strlcpy			
-ft_strlcat			
->>>>>>> fb86e458cadab77659c8654238c9689182309bc8
-ft_toupper			Funciona -paco
-ft_tolower			Funciona -paco
-ft_strchr			Funciona -paco
-ft_strrchr			Funciona -paco
-ft_strncmp			Funciona -paco
-<<<<<<< HEAD
-ft_memchr			Funciona 
-=======
-ft_memchr			
->>>>>>> fb86e458cadab77659c8654238c9689182309bc8
-ft_memcmp			Funciona
-ft_strnstr			
-ft_atoi				
+ft_toupper			Funciona -OK paco
+ft_tolower			Funciona -OK paco
+ft_strchr			Funciona -OK paco
+ft_strrchr			Funciona -OK paco
+ft_strncmp			Funciona -OK paco
+ft_memchr			Funciona -KO paco
+ft_memcmp			Funciona -OK paco
+ft_strnstr			No funciona
+ft_atoi				KO-paco
