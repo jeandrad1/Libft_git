@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 10:25:21 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/09 10:54:24 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/11 23:34:57 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -17,7 +17,7 @@ void	*ft_memset(void *str, int c, size_t n)
 {
 	unsigned char	*s;
 
-	s = str;
+	s = (unsigned char *) str;
 	while (n > 0)
 	{
 		*s = (unsigned char) c;

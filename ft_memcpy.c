@@ -1,4 +1,4 @@
-/* ************************************************************************** */
+/******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
@@ -6,24 +6,39 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 11:30:57 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/09 11:37:15 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/11 22:58:02 by jeandrad         ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/******************************************************************************/
 
 #include "libft.h"
 #include <stddef.h>
 
-void	*memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void	*dest, void const *src, size_t n)
 {
-	unsigned char	*ds;
+	char	*dest_ptr;
+	char	*src_ptr;
+	size_t	i;
 
-	ds = dst;
-	while (n > 0)
+	dest_ptr = (char *)dest;
+	src_ptr = (char *)src;
+	i = 0;
+	if (!dest && !src)
+		return (dest);
+	while (i < n)
 	{
-		ds = src;
-		ds++;
-		src++;
-		n--;
+		*(dest_ptr +i) = *(src_ptr +i);	
+		i++;
 	}
-	return (dst);
+	return (dest_ptr);
+}
+
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+	char src[] = "Hello, world!";
+	char dest[20];
+	ft_memcpy(dest, src, strlen(src) + 1);
+	printf("Copied string: %s\n", dest);
+	return 0;
 }
