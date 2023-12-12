@@ -1,4 +1,4 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
@@ -6,9 +6,9 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 12:54:45 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/09 22:50:41 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/12 12:31:10 by jeandrad         ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
 #include "libft.h"
 #include <stddef.h>
@@ -27,9 +27,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		i++;
 	}
 	return (0);
-
 }
-
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -42,10 +41,12 @@ int main() {
 	void *result = ft_memchr(str, search_char, search_len);
 
 	if (result != NULL) {
-		printf("Character '%c' found at index %ld\n", search_char, (char *)result - str);
+		printf("Character '%c' found at index %ld\n",
+	   	search_char, (char *)result - str);
 	} else {
 		printf("Character '%c' not found\n", search_char);
 	}
 
 	return 0;
 }
+*/

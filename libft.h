@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 11:24:09 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/09 13:13:41 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/12 10:46:14 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ int					ft_isalnum(int c);
 int					ft_isprint(int c);
 int					ft_isascii(int c);
 size_t				ft_strlen(const char *str);
-/*
 int					ft_strlcat(char *dst, const char *src, size_t size);
-*/
 int					ft_strlcpy(char *dest, const char *src, int size);
 int					ft_toupper(int ch);
 int					ft_tolower(int ch);
@@ -35,6 +33,8 @@ void				*ft_memset(void *str, int c, size_t n);
 void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *str1, const void *str2, size_t n);
 int					ft_atoi(const char *str);
-char				*ft_strnstr(const char *hay, const char *needle, size_t len);
-
+char				*ft_strnstr(const char *s, const char *ne, size_t len);
+void				*ft_calloc(size_t num, size_t size);
+void				*ft_memcpy(void	*dest, void const *src, size_t n);
+void				*ft_memmove(void *dest, const void *src, size_t n);
 #endif

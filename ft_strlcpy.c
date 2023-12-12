@@ -24,13 +24,12 @@ int	ft_strlcpy(char *dest, const char *src, int size)
 		dest[i] = src[i];
 		i++;
 	}
-/* if(dest[i] != '\0')
+	if(dest[i] != '\0')
 		dest[i] = '\0';
-	*/
 	return (i);
 }
 
-/*
+
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -38,4 +37,3 @@ int main(){
 	printf("strlcpy: %d\n",ft_strlcpy("Sobreescribe","copia",3));
 	return (0);
 }
-*/

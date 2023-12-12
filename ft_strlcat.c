@@ -10,17 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
 #include "libft.h"
 
-int	ft_strlcat(char *dst, const char *src, int size)
+int	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	int	dst_len;
-	int	src_len;
-	int	i;
+	size_t	dst_len;
+	size_t	src_len;
+	size_t	i;
 
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
 	i = 0;
+	if (src[i] == '\0')
+		return (dst_len);
 	if (size <= dst_len)
 	{
 		return (size + src_len);
