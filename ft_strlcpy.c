@@ -12,24 +12,33 @@
 
 #include "libft.h"
 
-int	ft_strlcpy(char *dest, const char *src, int size)
+size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
-	int	i;
+	size_t	i;
 
-	i = ft_strlen(src);
-	if (size <= 0)
+	i = 0;
+	if (size == 0)
+	{
+		while (src[i])
+			i++;
 		return (i);
+	}
 	while (src[i] != '\0' && i < size - 1)
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	if(dest[i] != '\0')
+	if (i < size)
 		dest[i] = '\0';
+	while (src[i])
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (i);
 }
 
-
+/*
 #include <stdio.h>
 #include <string.h>
 int main(){
@@ -37,3 +46,4 @@ int main(){
 	printf("strlcpy: %d\n",ft_strlcpy("Sobreescribe","copia",3));
 	return (0);
 }
+*/

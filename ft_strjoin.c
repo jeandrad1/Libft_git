@@ -15,28 +15,17 @@
 char *ft_strjoin(char const *s1, char const *s2)
 {
     char *str;
-    size_t i;
     int len;
 
-    len = ft_strlen(s1) + ft_strlen(s2);
-    i = 0;
-    if (!str || !(str = (char *)malloc(len +1)))
+	len = ft_strlen(s1) +ft_strlen(s2);
+	str = (char *)malloc(len +1);
+	if (str)
         return (NULL);
-    while (i < ft_lens(s1) && s1[i])
-    {
-        str[i] = s1[i];
-        i++;
-    }
-    i = 0;
-    while (i < ft_lens(s2) && s2[i])
-    {
-        str[ft_len(s1) + i] = s2[i];
-        i++;
-    }
-    str[ft_len(s1) + i] = '\0';
+	ft_strlcpy(str,s1,ft_strlen(s1));
+	ft_strlcat(str,s2,ft_strlen(s2));
     return (str);
 }
-
+/*
 #include <stdio.h>
 #include "libft.h"
 
@@ -49,3 +38,4 @@ int main(void){
     
     return 0;
 }
+*/
