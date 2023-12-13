@@ -8,16 +8,18 @@ ft_memset			Funciona -OK R
 ft_bzero			Funciona -OK R
 ft_memcpy			Funciona -OK R
 ft_memmove			Funciona -OK R
-ft_strlcpy			Funciona -KO
+ft_strlcpy			Funciona -OK R
 ft_strlcat			funciona -OK R 
 ft_toupper			Funciona -OK R
 ft_tolower			Funciona -OK R
 ft_strchr			Funciona -OK R
 ft_strrchr			Funciona -OK R
 ft_strncmp			Funciona -OK R
-ft_memchr			Funciona -KO 
+ft_memchr			Funciona -OK R
 ft_memcmp			Funciona -OK R
 ft_strnstr			Funciona -OK R
 ft_atoi				Funciona -OK R
 ft_calloc           Funciona -OK R
-ft_strdup           
+ft_strdup           No funciona
+ft_substr			No funciona
+ft_strjoin			No funciona
