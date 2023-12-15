@@ -1,26 +1,29 @@
-/* ************************************************************************** */
+/******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/30 09:23:52 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/11/30 09:23:52 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/15 22:46:57 by jeandrad         ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/******************************************************************************/
 
+#include <stddef.h>
 #include "libft.h"
 
-int	ft_strlcat(char *dst, const char *src, int size)
+int	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	int	dst_len;
-	int	src_len;
-	int	i;
+	size_t	dst_len;
+	size_t	src_len;
+	size_t	i;
 
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
 	i = 0;
+	if (src[i] == '\0')
+		return (dst_len);
 	if (size <= dst_len)
 	{
 		return (size + src_len);
@@ -39,7 +42,6 @@ int	ft_strlcat(char *dst, const char *src, int size)
 #include <string.h>
 int main(){
 	printf("ft_strlcat: %i\n",ft_strlcat("Concatena ","cinco",3));
-	printf("strlcat: %lu\n",strlcat("Concatena ","cinco",3));
 	return (0);
 }
 */

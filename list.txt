@@ -6,18 +6,21 @@ ft_isprint			Funciona -OK R
 ft_strlen			Funciona -OK R
 ft_memset			Funciona -OK R
 ft_bzero			Funciona -OK R
-ft_memcpy			Funciona
-ft_memmove			Funciona
-ft_strlcpy			Funciona
-ft_strlcat			funciona -KO 
+ft_memcpy			Funciona -OK R
+ft_memmove			Funciona -OK R
+ft_strlcpy			Funciona -OK R
+ft_strlcat			Funciona -OK R 
 ft_toupper			Funciona -OK R
 ft_tolower			Funciona -OK R
 ft_strchr			Funciona -OK R
 ft_strrchr			Funciona -OK R
 ft_strncmp			Funciona -OK R
-ft_memchr			Funciona -KO 
+ft_memchr			Funciona -OK R
 ft_memcmp			Funciona -OK R
-ft_strnstr			Funciona
-ft_atoi				Funciona -KO
-ft_calloc           Funciona
-ft_strdup           
+ft_strnstr			Funciona -OK R
+ft_atoi				Funciona -OK R
+ft_calloc           Funciona -OK R
+ft_strdup           Funciona
+ft_substr			Funciona
+ft_strjoin			No funciona (fallo raro de ft_strlcat)
+ft_split            Funciona

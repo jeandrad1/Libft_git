@@ -1,4 +1,4 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
@@ -6,9 +6,9 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 11:30:57 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/11 22:58:02 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/12 09:51:09 by jeandrad         ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
 #include "libft.h"
 #include <stddef.h>
@@ -26,12 +26,12 @@ void	*ft_memcpy(void	*dest, void const *src, size_t n)
 		return (dest);
 	while (i < n)
 	{
-		*(dest_ptr +i) = *(src_ptr +i);	
+		*(dest_ptr + i) = *(src_ptr + i);
 		i++;
 	}
 	return (dest_ptr);
 }
-
+/*
 #include <stdio.h>
 #include <string.h>
 
@@ -42,3 +42,4 @@ int main() {
 	printf("Copied string: %s\n", dest);
 	return 0;
 }
+*/
