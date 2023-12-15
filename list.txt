@@ -16,6 +16,7 @@ ft_strchr			Funciona -OK R
 ft_strrchr			Funciona -OK R
 ft_strncmp			Funciona -OK R
 ft_memchr			Funciona -OK R
+ft_memchr			Funciona -OK R
 ft_memcmp			Funciona -OK R
 ft_strnstr			Funciona -OK R
 ft_atoi				Funciona -OK R
