@@ -1,4 +1,4 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
@@ -6,17 +6,17 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 23:07:30 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/15 23:34:31 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/16 12:54:55 by jeandrad         ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
 static int	count_words(const char *str, char c)
 {
-	int i;
-	int t;
+	int	i;
+	int	t;
 
 	i = 0;
 	t = 0;
@@ -47,16 +47,16 @@ static char	*dup_word(const char *str, int fl, int end)
 	return (word);
 }
 
-char		**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	size_t	i;
 	size_t	j;
 	int		count;
 	char	**split;
 
-	if (!s)
-		return (0);
-    split = (char **) malloc((count_words(s, c) + 1) * sizeof(char *));
+	split = (char **) malloc((count_words(s, c) + 1) * sizeof(char *));
+	if (!s || !split)
+		return (NULL);
 	i = 0;
 	j = 0;
 	count = -1;
@@ -71,10 +71,10 @@ char		**ft_split(char const *s, char c)
 		}
 		i++;
 	}
-	split[j] = '\0';
+	split[j] = 0;
 	return (split);
 }
-
+/*
 #include <stdio.h>
 int main(void) {
     char const *s = "Hello,World,How,Are,You";
@@ -89,3 +89,4 @@ int main(void) {
     }
     return 0;
 }
+*/

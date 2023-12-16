@@ -21,7 +21,9 @@ ft_memcmp			Funciona -OK R
 ft_strnstr			Funciona -OK R
 ft_atoi				Funciona -OK R
 ft_calloc           Funciona -OK R
-ft_strdup           Funciona
-ft_substr			Funciona
-ft_strjoin			No funciona (fallo raro de ft_strlcat)
-ft_split            Funciona
+ft_strdup           Funciona -OK R
+ft_substr			Funciona -Errores de malloc
+ft_strjoin			Funciona -OK R
+ft_strtrim			No funciona Errores de alocacion de memoria Rehacer entero
+ft_split            Funciona -OK R
+ft_itoa				

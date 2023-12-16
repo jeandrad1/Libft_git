@@ -1,4 +1,4 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
@@ -6,9 +6,9 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 11:24:09 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/15 23:39:47 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/16 11:45:30 by jeandrad         ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -40,4 +40,6 @@ void				*ft_memmove(void *dest, const void *src, size_t n);
 char				*ft_strdup(const char *str);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const*s1, char const *s2);
+char				*ft_strtrim(char const *s1, char const *set);
+char				**ft_split(char const *s, char c);
 #endif
