@@ -1,4 +1,4 @@
-/* ************************************************************************** */
+/******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
@@ -6,36 +6,32 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 22:48:17 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/16 11:32:46 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/16 22:36:17 by jeandrad         ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/******************************************************************************/
 
 #include "libft.h"
 #include <stdlib.h>
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(const char *s1, const char *set)
 {
-	size_t	i;
-	int		len;
-	char	*str;
+	char	*res;
+	size_t	len;
 
-	i = 0;
-	if (!s1 || !set)
-		return (0);
-	while (s1[i] && ft_strchr(set, s1[i]) != (void *) 0)
-		i++;
+	if (!s1)
+		return (NULL);
+	while (*s1 && ft_strchr(set, *s1))
+		s1++;
 	len = ft_strlen(s1);
-	while (len > 0 && ft_strchr(set, s1[len -1]) != (void *) 0)
+	while (len > 0 && ft_strchr(set, s1[len - 1]))
 		len--;
-	str = (char *) malloc(sizeof(*str) * (len - i + 1));
-	if (!str)
-		return (0);
-	ft_memcpy(str, s1, len);
-	str[len] = 0;
-	return (str);
+	res = (char *) malloc(len + 1);
+	if (!res)
+		return (NULL);
+	ft_strlcpy(res, s1, len + 1);
+	return (res);
 }
 
-/*
 #include <stdio.h>
 
 int main() {
@@ -46,4 +42,3 @@ int main() {
     printf("test: %s\n", p_trim);
     return 0;
 }
-*/

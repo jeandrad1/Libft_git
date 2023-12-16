@@ -24,6 +24,8 @@ ft_calloc           Funciona -OK R
 ft_strdup           Funciona -OK R
 ft_substr			Funciona -Errores de malloc
 ft_strjoin			Funciona -OK R
-ft_strtrim			No funciona Errores de alocacion de memoria Rehacer entero
+ft_strtrim			Funciona 
 ft_split            Funciona -OK R
-ft_itoa				
+ft_itoa				Funciona
+ft_strmapi          Funciona
+ft_striteri         Funciona
