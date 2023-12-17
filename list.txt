@@ -22,10 +22,10 @@ ft_strnstr			Funciona -OK R
 ft_atoi				Funciona -OK R
 ft_calloc           Funciona -OK R
 ft_strdup           Funciona -OK R
-ft_substr			Funciona -Errores de malloc
+ft_substr			Funciona -KO Errores de malloc
 ft_strjoin			Funciona -OK R
-ft_strtrim			Funciona 
+ft_strtrim			Funciona -OK R
 ft_split            Funciona -OK R
-ft_itoa				Funciona
-ft_strmapi          Funciona
-ft_striteri         Funciona
+ft_itoa				Funciona -KO Multiples errores y muy largo
+ft_strmapi          Funciona -OK R
+ft_striteri         Funciona -OK R

@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 23:07:30 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/16 12:54:55 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/17 13:02:22 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ static char	*dup_word(const char *str, int fl, int end)
 
 	i = 0;
 	word = (char *) malloc((end - fl + 1) * sizeof(char));
+	if (!str || !word)
+		return (NULL);
 	while (fl < end)
 		word[i++] = str[fl++];
 	word[i] = '\0';

@@ -13,24 +13,24 @@
 #include "libft.h"
 #include <stdlib.h>
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-    char *str;
-    int i;
+	char	*str;
+	int		i;
 
-    i = 0;
-    str = (char *) malloc(ft_strlen(s) * sizeof(char) + 1);
-    if (!str)
-        return (NULL);
-    while (s[i])
-    {
-        str[i] = f(i, s[i]);
-        i++;
-    }
-    str[i] = 0;
-    return (str);
+	i = 0;
+	str = (char *) malloc(ft_strlen(s) * sizeof(char) + 1);
+	if (!str)
+		return (0);
+	while (s[i])
+	{
+		str[i] = f(i, s[i]);
+		i++;
+	}
+	str[i] = 0;
+	return (str);
 }
-
+/*
 #include <stdio.h>
 
 int main(){
@@ -40,3 +40,4 @@ int main(){
     printf("test: %s\n", p_trim);
     return 0;
 }
+*/

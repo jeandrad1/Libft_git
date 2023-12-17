@@ -1,30 +1,42 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/17 11:47:54 by jeandrad          #+#    #+#             */
+/*   Updated: 2023/12/17 11:47:54 by jeandrad         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 #include <stdlib.h>
 
-int ft_recursive_power(int nb, int power)
+int	ft_recursive_power(int nb, int power)
 {
 	if (power == 0)
-        return 1;
-    else if (power > 0)
-        return (nb * ft_recursive_power(nb, power - 1));
-    else
-        return (0);
+		return (1);
+	else if (power > 0)
+		return (nb * ft_recursive_power(nb, power - 1));
+	else
+		return (0);
 }
 
-int ft_nsize(int n)
+int	ft_nsize(int n)
 {
-    int i;
-    int isneg;
-    int aux;
+	int	i;
+	int	isneg;
+	int	aux;
 
-    isneg = 1;
-    i = 0;
-    if (n < 0)
-        isneg = -1;
-    aux = n * isneg;
-    while (ft_recursive_power(10, i) < aux)
-        i++;
-    return (i +1);
+	isneg = 1;
+	i = 0;
+	if (n < 0)
+		isneg = -1;
+	aux = n * isneg;
+	while (ft_recursive_power(10, i) < aux)
+		i++;
+	return (i +1);
 }
 
 char	*ft_itoa(int n)
@@ -35,10 +47,10 @@ char	*ft_itoa(int n)
 
 	nb = n;
 	i = ft_nsize(nb);
-    str = (char *) malloc(i * sizeof(char) + 1);
+	str = (char *) malloc(i * sizeof(char) + 1);
 	if (!n || !str)
 		return (0);
-    str[i--] = 0;
+	str[i--] = 0;
 	if (nb == 0)
 	{
 		str = (char *) ft_calloc(2, sizeof(char));
@@ -57,6 +69,7 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
+
 #include <stdio.h>
 #include "libft.h"
 
@@ -66,4 +79,3 @@ int main(){
     printf("Number: %d\nString: %s\n", num, str);
     return 0;
 }
-
