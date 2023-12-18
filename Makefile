@@ -10,7 +10,11 @@ SRC =	ft_isalnum.c ft_isalpha.c ft_isdigit.c ft_isascii.c ft_isprint.c ft_strlen
 		ft_memcmp.c ft_atoi.c ft_strnstr.c ft_calloc.c ft_memcpy.c ft_memmove.c ft_strlcat.c ft_strjoin.c \
 		ft_split.c ft_strtrim.c ft_strdup.c ft_substr.c ft_itoa.c ft_strmapi.c ft_striteri.c
 
+BONUS =
+
 OBJ = $(SRC:.c=.o)
+
+BONUS_OBJS = $(BONUS:.c=.o)
 
 # Reglas
 all: $(NAME)
@@ -24,12 +28,15 @@ $(NAME): $(OBJ)
 
 #Limpia libreria y .o
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(BONUS_OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME) 
 
 #Reconstruye
-re: fclean all
+re: fclean $(NAME)
 
-.PHONY: all clean fclean re
+bonus:			$(OBJS) $(BONUS_OBJS)
+				ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
+
+.PHONY: all clean fclean re bonus

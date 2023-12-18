@@ -1,3 +1,4 @@
+PARTE OBLIGATORIA
 ft_isalpha			Funciona -OK R
 ft_isdigit			Funciona -OK R
 ft_isalnum			Funciona -OK R
@@ -25,7 +26,17 @@ ft_strdup           Funciona -OK R
 ft_substr			Funciona -KO Errores de malloc
 ft_strjoin			Funciona -OK R
 ft_strtrim			Funciona -OK R
-ft_split            Funciona -OK R
-ft_itoa				Funciona -KO Multiples errores y muy largo
+ft_split            Funciona -OK KO en francinette -s
+ft_itoa				Funciona -KO Multiples errores (en los positivos repite la primera cifra) y muy largo, buscar equivalente de la piscina
 ft_strmapi          Funciona -OK R
 ft_striteri         Funciona -OK R
+ft_putchr_fd        Funciona
+ft_putstr_fd        Funciona
+ft_putendl_fd       Funciona 
+ft_putnbr_fd        Funciona 
+PARTE BONUS
+ft_lstnew_node      Funciona
+ft_lstadd_front     Funciona
+ft_lstsize          Funciona
+ft_lstlast          Funciona
+ft_lstadd_back      Funciona

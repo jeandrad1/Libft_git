@@ -1,4 +1,4 @@
-/* ************************************************************************** */
+/******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
@@ -6,9 +6,9 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:47:54 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/17 11:47:54 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/18 20:26:33 by jeandrad         ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/******************************************************************************/
 
 #include "libft.h"
 #include <stdlib.h>
@@ -47,15 +47,13 @@ char	*ft_itoa(int n)
 
 	nb = n;
 	i = ft_nsize(nb);
-	str = (char *) malloc(i * sizeof(char) + 1);
-	if (!n || !str)
-		return (0);
-	str[i--] = 0;
+	str = (char *) malloc(sizeof(char) * + (i + 1));
+	if (!str)
+		return (NULL);
+	str[i] = 0;
+	i--;
 	if (nb == 0)
-	{
-		str = (char *) ft_calloc(2, sizeof(char));
-		str[0] = 48;
-	}
+		str = ft_strdup("0");
 	if (nb < 0)
 	{
 		str[0] = '-';
@@ -63,7 +61,7 @@ char	*ft_itoa(int n)
 	}
 	while (nb > 0)
 	{
-		str[i--] = nb % 10 + '0';
+		str[i--] = (nb % 10) + '0';
 		nb = nb / 10;
 	}
 	return (str);
@@ -74,7 +72,7 @@ char	*ft_itoa(int n)
 #include "libft.h"
 
 int main(){
-    int num = -12345;
+    int num = 8745;
     char *str = ft_itoa(num);
     printf("Number: %d\nString: %s\n", num, str);
     return 0;
