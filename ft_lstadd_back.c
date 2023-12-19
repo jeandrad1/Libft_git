@@ -1,18 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/19 09:56:12 by jeandrad          #+#    #+#             */
+/*   Updated: 2023/12/19 09:57:20 by jeandrad         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-
-//Cambiar new1 por new
-
-void ft_lstadd_back(t_list **lst, t_list *new1)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-    if (!lst)
-        return ;
-    if (!*lst)
-        *lst = new1;
-    else
-        ft_lstlast(*lst)->next = new1;
+	if (!lst)
+		return ;
+	if (!*lst)
+		*lst = new;
+	else
+		ft_lstlast(*lst)->next = new;
 }
-
+/*
 #include <stdio.h>
 int main(){
     t_list *list;
@@ -24,8 +33,9 @@ int main(){
     list = ft_lstnew(str);
     new1 = ft_lstnew(str2);
     new2 = ft_lstnew(str3);
-    ft_lstadd_back(&list, new1);
+    ft_lstadd_back(&list, new);
     ft_lstadd_back(&list, new2);
     printf("%s\n", ft_lstlast(list)->content);
     return (0);
 }
+*/

@@ -10,6 +10,8 @@
 /*                                                                            */
 /******************************************************************************/
 
+
+//Revisar el calculo del size
 #include "libft.h"
 #include <stdlib.h>
 
@@ -66,8 +68,7 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-
+/*
 #include <stdio.h>
 #include "libft.h"
 
@@ -77,3 +78,4 @@ int main(){
     printf("Number: %d\nString: %s\n", num, str);
     return 0;
 }
+*/

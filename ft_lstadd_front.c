@@ -1,14 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/19 09:57:56 by jeandrad          #+#    #+#             */
+/*   Updated: 2023/12/19 09:58:57 by jeandrad         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-
-//Cambiar todos los new_node por new para la compilacion en c
-
-void ft_lstadd_front(t_list **lst, t_list *new_node)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-    if (!lst || !new_node)
-        return ;
-    new_node->next = *lst;
-    *lst = new_node;
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
 
 /*
@@ -16,12 +25,12 @@ void ft_lstadd_front(t_list **lst, t_list *new_node)
 
 int main(){
     t_list *list;
-    t_list *new_node;
+    t_list *new1;
     char str []= "Hello World";
     char str2 []= "Hello World2";
     list = ft_lstnew(str);
-    new_node = ft_lstnew(str2);
-    ft_lstadd_front(&list, new_node);
+    new1 = ft_lstnew(str2);
+    ft_lstadd_front(&list, new1);
     printf("%s\n", list->content);
     printf("%s\n", list->next->content);
     return (0);

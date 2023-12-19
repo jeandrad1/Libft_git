@@ -27,16 +27,17 @@ ft_substr			Funciona -KO Errores de malloc
 ft_strjoin			Funciona -OK R
 ft_strtrim			Funciona -OK R
 ft_split            Funciona -OK KO en francinette -s
-ft_itoa				Funciona -KO Multiples errores (en los positivos repite la primera cifra) y muy largo, buscar equivalente de la piscina
+ft_itoa				NO Funciona -KO Multiples errores (en los positivos repite la primera cifra) y muy largo, buscar equivalente de la piscina
 ft_strmapi          Funciona -OK R
 ft_striteri         Funciona -OK R
-ft_putchr_fd        Funciona
-ft_putstr_fd        Funciona
-ft_putendl_fd       Funciona 
-ft_putnbr_fd        Funciona 
+ft_putchar_fd       Funciona -OK R 
+ft_putstr_fd        Funciona -OK R
+ft_putendl_fd       Funciona -OK R
+ft_putnbr_fd        Funciona -OK R
 PARTE BONUS
-ft_lstnew_node      Funciona
-ft_lstadd_front     Funciona
-ft_lstsize          Funciona
-ft_lstlast          Funciona
-ft_lstadd_back      Funciona
+ft_lstnew			Funciona -OK R
+ft_lstadd_front     Funciona -OK R
+ft_lstsize          Funciona -OK R
+ft_lstlast          Funciona -OK R
+ft_lstadd_back      Funciona -OK R
+ft_lstclear			Funciona -OK R
