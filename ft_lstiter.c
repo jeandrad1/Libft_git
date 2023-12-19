@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 11:21:20 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/19 12:05:54 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/19 16:26:08 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	while (lst)
 	{
-		f(lst);
-		lst = lst->next;
+		f(lst->content);
+		lst = lst -> next;
 	}
 }
