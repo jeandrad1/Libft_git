@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:47:54 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/18 20:26:33 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/20 12:10:43 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -28,17 +28,22 @@ int	ft_recursive_power(int nb, int power)
 int	ft_nsize(int n)
 {
 	int	i;
-	int	isneg;
 	int	aux;
 
-	isneg = 1;
 	i = 0;
 	if (n < 0)
-		isneg = -1;
-	aux = n * isneg;
-	while (ft_recursive_power(10, i) < aux)
+	{
+		aux = -1 * n;
+		while (ft_recursive_power(10, i) <= aux)
 		i++;
-	return (i +1);
+		return (i + 1);
+	}
+	else
+	{
+		while (ft_recursive_power(10, i) <= n)
+		i++;
+		return (i);
+	}
 }
 
 char	*ft_itoa(int n)
@@ -68,14 +73,17 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-/*
+
 #include <stdio.h>
 #include "libft.h"
 
 int main(){
-    int num = 8745;
-    char *str = ft_itoa(num);
-    printf("Number: %d\nString: %s\n", num, str);
+    int num = -100;
+	while (num < 100){
+		char *str = ft_itoa(num);
+    	printf("Number: %d\tString: %s\t", num, str);
+		printf("S Size: %d\n", ft_strlen(str));
+		num+=10;
+	}
     return 0;
 }
-*/

@@ -1,4 +1,4 @@
-/* ************************************************************************** */
+/******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
@@ -6,9 +6,9 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 23:07:30 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/17 13:02:22 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/20 16:57:24 by jeandrad         ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/******************************************************************************/
 
 #include "libft.h"
 #include <stdlib.h>
@@ -48,6 +48,17 @@ static char	*dup_word(const char *str, int fl, int end)
 	word[i] = '\0';
 	return (word);
 }
+static char *safe_dup_word(const char *str, int fl, int end, char **split, int j)
+{
+    char *word = dup_word(str, fl, end);
+    if (!word)
+    {
+        while (j > 0)
+            free(split[--j]);
+        free(split);
+    }
+    return word;
+}
 
 char	**ft_split(char const *s, char c)
 {
@@ -68,7 +79,9 @@ char	**ft_split(char const *s, char c)
 			count = i;
 		else if ((s[i] == c || i == ft_strlen(s)) && count >= 0)
 		{
-			split[j++] = dup_word(s, count, i);
+			split[j++] = safe_dup_word(s, count, i,split,j);
+			if(!split[j])
+				return (NULL);
 			count = -1;
 		}
 		i++;
@@ -76,7 +89,7 @@ char	**ft_split(char const *s, char c)
 	split[j] = 0;
 	return (split);
 }
-/*
+
 #include <stdio.h>
 int main(void) {
     char const *s = "Hello,World,How,Are,You";
@@ -91,4 +104,3 @@ int main(void) {
     }
     return 0;
 }
-*/
