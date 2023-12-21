@@ -23,11 +23,11 @@ ft_strnstr			Funciona -OK R
 ft_atoi				Funciona -OK R
 ft_calloc           Funciona -OK R
 ft_strdup           Funciona -OK R
-ft_substr			Funciona -KO Errores de malloc
+ft_substr			Funciona -KO PACO SIGDEV y CRASH
 ft_strjoin			Funciona -OK R
 ft_strtrim			Funciona -OK R
 ft_split            Funciona -
-ft_itoa				Funciona -
+ft_itoa				Funciona -KO PACO TIMEOUT y CRASH
 ft_strmapi          Funciona -OK R
 ft_striteri         Funciona -OK R
 ft_putchar_fd       Funciona -OK R 

@@ -1,17 +1,15 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/17 11:47:54 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/20 12:10:43 by jeandrad         ###   ########.fr       */
+/*   Created: 2023/12/21 13:52:49 by jeandrad          #+#    #+#             */
+/*   Updated: 2023/12/21 13:52:49 by jeandrad         ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
-
-//Revisar el calculo del size
 #include "libft.h"
 #include <stdlib.h>
 
@@ -35,13 +33,13 @@ int	ft_nsize(int n)
 	{
 		aux = -1 * n;
 		while (ft_recursive_power(10, i) <= aux)
-		i++;
+			i++;
 		return (i + 1);
 	}
 	else
 	{
 		while (ft_recursive_power(10, i) <= n)
-		i++;
+			i++;
 		return (i);
 	}
 }
@@ -73,7 +71,7 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
+/*
 #include <stdio.h>
 #include "libft.h"
 
@@ -87,3 +85,4 @@ int main(){
 	}
     return 0;
 }
+*/
