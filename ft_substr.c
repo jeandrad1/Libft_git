@@ -1,4 +1,4 @@
-/* ************************************************************************** */
+/******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
@@ -6,9 +6,9 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 22:44:37 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/21 13:51:27 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/21 18:52:42 by jeandrad         ###   ########.fr       */
 /*                                                                            */
-/* ************************************************************************** */
+/******************************************************************************/
 
 #include "libft.h"
 #include <stdlib.h>
@@ -27,16 +27,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	while (i < ft_strlen(s) && j < len && s)
 	{
 		new_str[j++] = s[i++];
-		if (!s[i])
-		{
-			free(new_str);
-			return (NULL);
-		}
 	}
 	new_str[j] = '\0';
 	return (new_str);
 }
-/*
+
 #include <stdio.h>
 #include "libft.h"
 
@@ -49,4 +44,3 @@ int main(){
 
     return 0;
 }
-*/

@@ -42,4 +42,4 @@ ft_lstlast          Funciona -OK R
 ft_lstadd_back      Funciona -OK R
 ft_lstclear			Funciona -OK R
 ft_striteri			Funciona -OK R 
-ft_lstmap			
+ft_lstmap			Funciona -OK R
