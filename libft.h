@@ -6,12 +6,13 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 11:24:09 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/21 10:16:05 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/22 13:14:37 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-# define LIBFT_H 
+# define LIBFT_H
+
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
@@ -20,7 +21,7 @@ typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
-}			t_list;
+}	t_list;
 
 int					ft_isalpha(int c);
 int					ft_isdigit(int c);
@@ -28,7 +29,7 @@ int					ft_isalnum(int c);
 int					ft_isprint(int c);
 int					ft_isascii(int c);
 size_t				ft_strlen(const char *str);
-int					ft_strlcat(char *dst, const char *src, size_t size);
+size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlcpy(char *dest, const char *src, size_t size);
 int					ft_toupper(int ch);
 int					ft_tolower(int ch);

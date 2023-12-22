@@ -6,14 +6,14 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 23:07:30 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/21 13:51:16 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/22 11:40:20 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-static void	ft_free(char **str, int j)
+static void	*ft_free(char **str, int j)
 {
 	int	i;
 
@@ -24,6 +24,7 @@ static void	ft_free(char **str, int j)
 		i++;
 	}
 	free (str);
+	return (NULL);
 }
 
 static int	count_words(const char *str, char c)
@@ -37,8 +38,8 @@ static int	count_words(const char *str, char c)
 	{
 		if (*str != c && t == 0)
 		{
-			t = 1;
 			i++;
+			t = 1;
 		}
 		else if (*str == c)
 			t = 0;
@@ -54,6 +55,8 @@ static char	*dup_word(const char *str, int fl, int end)
 
 	i = 0;
 	word = (char *) malloc((end - fl + 1) * sizeof(char));
+	if (!word)
+		return (NULL);
 	while (fl < end)
 		word[i++] = str[fl++];
 	word[i] = '\0';
@@ -78,7 +81,7 @@ static char	**ft_split_core(char const *s, char c, char **st)
 			st[j] = dup_word(s, count, i);
 			if (!st[j])
 			{
-				ft_free(st, j);
+				return (ft_free(st, j));
 			}
 			count = -1;
 			j++;

@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 09:04:20 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/21 13:56:45 by jeandrad         ###   ########.fr       */
+/*   Updated: 2023/12/22 13:55:14 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,21 +17,14 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*father;
 	t_list	*new;
 
-	if (!f || !del)
-		return (NULL);
-	father = NULL;
+	father = ft_lstnew(NULL);
 	while (lst)
 	{
-		if (!(new = ft_lstnew((*f)(lst->content))))
+		new = ft_lstnew((*f)(lst->content));
+		if (!(new))
 		{
-			while (father)
-			{
-				new = father->next;
-				(*del)(father->content);
-				free(father);
-				father = new;
-			}
-			lst = NULL;
+			ft_lstclear(&father, del);
+			free(father);
 			return (NULL);
 		}
 		ft_lstadd_back(&father, new);
