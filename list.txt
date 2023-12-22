@@ -27,7 +27,7 @@ ft_substr			Funciona -OK R
 ft_strjoin			Funciona -OK R
 ft_strtrim			Funciona -OK R
 ft_split            Funciona -OK R
-ft_itoa				Funciona -KO PACO 1 LEAKS KO
+ft_itoa				Funciona -OK R
 ft_strmapi          Funciona -OK R
 ft_striteri         Funciona -OK R
 ft_putchar_fd       Funciona -OK R 
