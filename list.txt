@@ -35,11 +35,11 @@ ft_putstr_fd        Funciona -OK R
 ft_putendl_fd       Funciona -OK R
 ft_putnbr_fd        Funciona -OK R
 PARTE BONUS
-ft_lstnew			Funciona -OK R
-ft_lstadd_front     Funciona -OK R
-ft_lstsize          Funciona -OK R
-ft_lstlast          Funciona -OK R
-ft_lstadd_back      Funciona -OK R
-ft_lstclear			Funciona -OK R
-ft_striteri			Funciona -OK R 
-ft_lstmap			Funciona -KO REHECHO: PROBAR
+ft_lstnew_bonus				Funciona -OK R
+ft_lstadd_front_bonus	    Funciona -OK R
+ft_lstsize_bonus	        Funciona -OK R
+ft_lstlast_bonus	        Funciona -OK R
+ft_lstadd_back_bonus	    Funciona -OK R
+ft_lstclear_bonus			Funciona -OK R
+ft_striteri_bonus			Funciona -OK R 
+ft_lstmap_bonus				Funciona -OK R
