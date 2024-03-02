@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/16 10:22:55 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/16 11:47:43 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:09:11 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,16 +43,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strcat(str, s2);
 	return (str);
 }
-
-/*
-#include <stdio.h>
-#include "libft.h"
-
-int main(void){
-    char s1 [] = "Hello,";
-    char s2 [] = " world!";
-    char *result = ft_strjoin(s1, s2);
-    printf("%s\n", result);
-    return 0;
-}
-*/

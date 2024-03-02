@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 11:30:57 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/12 09:51:09 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:07:59 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,3 @@ void	*ft_memcpy(void	*dest, void const *src, size_t n)
 	}
 	return (dest_ptr);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-	char src[] = "Hello, world!";
-	char dest[20];
-	ft_memcpy(dest, src, strlen(src) + 1);
-	printf("Copied string: %s\n", dest);
-	return 0;
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 09:43:54 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/12 09:43:56 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 11:12:29 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,26 +27,3 @@ void	ft_bzero(void *str, size_t n)
 	}
 }
 
-/*
-#include <stdio.h>
-#include "libft.h"
-
-int main() {
-	char s[] = "Esto todo ahi que borrarlo.";
-	printf("%s\n", s);
-	ft_bzero(s, 5);
-	printf("%s\n", s);
-	return 0;
-}
-*/
-
-/*
-#include<stdio.h>
-int main(){
-	char s [] = "Esto todo ahi que borrarlo.";
-	printf("%s\n",s);
-	ft_bzero(s,5);
-	printf("%s\n",s);
-	return (0);
-}
-*/

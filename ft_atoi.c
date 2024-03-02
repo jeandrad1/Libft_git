@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 22:47:04 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/12 09:27:31 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 11:12:23 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,3 @@ int	ft_atoi(const char *str)
 	}
 	return (num * numsign);
 }
-/*
-#include <stdio.h>
-int main(){
-	printf("%d", ft_atoi(" -1234ab567"));
-	return (0);
-}
-*/

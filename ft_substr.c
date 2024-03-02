@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 22:44:37 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/22 13:07:34 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:10:10 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,18 +38,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	new_str[j] = '\0';
 	return (new_str);
 }
-
-/*
-#include <stdio.h>
-#include "libft.h"
-
-int main(){
-    char s [] = "Test4TestingEnd";
-    unsigned int start = 5;
-    size_t len = 15;
-    char *result = ft_substr(s, start, len);
-    printf("%s\n", result);
-
-    return 0;
-}
-*/

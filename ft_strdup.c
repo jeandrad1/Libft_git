@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 12:38:29 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/16 11:49:07 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:09:00 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,3 @@ char	*ft_strdup(const char *s1)
 	dup[i] = '\0';
 	return (dup);
 }
-
-/*
-#include <stdio.h>
-
-int main(){
-	const char *str = "Hello, world!";
-	char *dup_str = ft_strdup(str);
-	printf("%s\n", dup_str);
-	printf("%i\n", ft_strlen(dup_str));
-	free(dup_str);
-	return 0;
-}
-*/

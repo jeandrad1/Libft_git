@@ -19,19 +19,3 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-	int i = 0;
-	while (i < 250)
-	{
-		printf("ft_isprint: %i\t", ft_isprint(i));
-		printf("isprint: %i\n",isprint(i));
-		i++;
-	}
-	return (0);
-}
-*/

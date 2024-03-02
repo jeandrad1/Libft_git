@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 13:06:02 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/11/30 10:59:49 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 11:12:47 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,3 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main(){
-	int i = 0;
-	while (i <253)
-	{
-		printf("ft_isdigit: %i\t",ft_isdigit(i));
-		printf("isdigit: %i\n", isdigit(i));
-		i++;
-	}
-	return (0);
-}
-*/

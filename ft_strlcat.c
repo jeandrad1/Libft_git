@@ -36,12 +36,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-int main(){
-	printf("ft_strlcat: %i\n",ft_strlcat("Concatena ","cinco",3));
-	return (0);
-}
-*/

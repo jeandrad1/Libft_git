@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 12:23:51 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/03 11:45:25 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 11:12:39 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,18 +21,3 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-	int i = 0;
-	while (i < 253){
-		printf("ft_isalpha: %i\t", ft_isalpha(i));
-		printf("isalpha: %i\n", isalpha(i));
-		i++;
-	}
-	return (0);
-}
-*/

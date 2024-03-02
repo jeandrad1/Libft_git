@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:54:28 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/19 10:29:41 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:08:27 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,3 @@ void	ft_putstr_fd(char *s, int fd)
 	while (s[i])
 		ft_putchar_fd(s[i++], fd);
 }
-/*
-int main(void)
-{
-    char test[] = "Hello World!";
-    ft_putstr_fd(test, 1);
-    return (0);
-}
-*/

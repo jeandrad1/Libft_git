@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 22:40:35 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/12 11:38:57 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:08:07 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,16 +40,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/*
-int main() {
-    char str1[] = "Hello, World!";
-    char str2[20];
-
-    ft_memmove(str2, str1, sizeof(str1));
-
-    printf("str2: %s\n", str2);
-
-    return 0;
-}
-*/

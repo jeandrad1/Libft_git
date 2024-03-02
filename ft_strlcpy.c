@@ -36,13 +36,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	return (i);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-int main(){
-	printf("ft_strlcpy: %d\n", ft_strlcpy("Sobreescribe", "copia", 3));
-	printf("strlcpy: %d\n",ft_strlcpy("Sobreescribe","copia",3));
-	return (0);
-}
-*/

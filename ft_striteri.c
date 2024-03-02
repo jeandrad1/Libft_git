@@ -26,17 +26,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-/*
-#include <stdio.h>  
-
-int main(){
-    char s []= "abcde98765fghijklm123abc";
-    int i = 0;
-    while (i < ft_strlen(s))
-    {
-        printf(ft_striteri(s,    ));
-        i++;
-    }
-    return (0);
-}
-*/

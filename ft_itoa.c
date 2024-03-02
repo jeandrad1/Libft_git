@@ -55,22 +55,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-/* 
-#include <stdio.h>
-#include <limits.h>
-#include "libft.h"
-
-int main(){
-    //int num = INT_MIN;
-	//while (num <= INT_MAX){
-		
-		char *str = ft_itoa(52);
-    	// printf("Number: %d\tString: %s\t", num, str);
-		// printf("S Size: %d\n", ft_strlen(str));
-
-		//num+=1000000000;
-//	}
-    return 0;
-}
- */

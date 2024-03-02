@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 23:07:30 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/22 11:40:20 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:08:34 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,19 +102,3 @@ char	**ft_split(char const *s, char c)
 	split = ft_split_core(s, c, split);
 	return (split);
 }
-/*
-#include <stdio.h>
-int main(void) {
-    char const *s = "Hello,World,How,Are,You";
-    char c = ',';
-    char **result = ft_split(s, c);
-    if (result) {
-        int i = 0;
-        while (result[i]) {
-            printf("%s\n", result[i]);
-            i++;
-        }
-    }
-    return 0;
-}
-*/

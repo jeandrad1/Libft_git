@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 09:52:30 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/12 10:17:15 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:10:01 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,21 +25,3 @@ char	*ft_strrchr( const char *str, int c)
 	}
 	return (NULL);
 }
-
-/*
-#include <stdio.h>
-int main(void)
-{
-	const char *str = "Find h here.";
-	int c = 'h';
-	
-	char *result = ft_strrchr(str, c);
-	
-	if (result != NULL)
-		printf("Character '%c' found at position: %ld\n", c, result - str);
-	else
-		printf("Character '%c' not found\n", c);
-	
-	return 0;
-}
-*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeandrad <jeandrad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:21:27 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/11/28 10:21:27 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 11:12:34 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,18 +21,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-	int i = 0;
-	while(i < 250)
-	{
-		printf("ft_isalnum: %i\t", ft_isalnum(i));
-		printf("isalnum: %i\n", isalnum(i));
-		i++;
-	}
-	return (0);
-}
-*/

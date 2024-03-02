@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/23 09:14:53 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/23 09:31:28 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 11:13:05 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,21 +24,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	else
 		ft_lstlast(*lst)->next = new;
 }
-/*
-#include <stdio.h>
-int main(){
-    t_list *list;
-    t_list *new1;
-    t_list *new2;
-    char str []= "Test1";
-    char str2 []= "Test2";
-    char str3 []= "Test3";
-    list = ft_lstnew(str);
-    new1 = ft_lstnew(str2);
-    new2 = ft_lstnew(str3);
-    ft_lstadd_back(&list, new);
-    ft_lstadd_back(&list, new2);
-    printf("%s\n", ft_lstlast(list)->content);
-    return (0);
-}
-*/

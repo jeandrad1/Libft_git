@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:27:27 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/12 09:38:52 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:09:42 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,3 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int main()
-{
-	printf("Length: %lu\n", ft_strlen("qwerty "));
-	printf("Length: %lu\n", strlen("qwerty "));	
-	return (0);
-}
-*/

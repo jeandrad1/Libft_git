@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 12:56:07 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/12 10:24:00 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:09:54 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,26 +37,3 @@ char	*ft_strnstr(const char *s, const char *ne, size_t len)
 	}
 	return (0);
 }
-
-/*
-#include <stdio.h>
-
-int main()
-{
-	const char *haystack = "Hello, world!";
-	const char *ne = "world";
-	
-	char *result = ft_strnstr(haystack, ne, 13);
-	
-	if (result != 0)
-	{
-		printf("Substring found at index: %ld\n", result - haystack);
-	}
-	else
-	{
-		printf("Substring not found\n");
-	}
-	
-	return 0;
-}
-*/

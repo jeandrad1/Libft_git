@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 10:01:07 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/19 10:01:28 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:07:51 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,3 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
-
-/*
-#include <stdio.h>
-int main(){
-    t_list *list;
-    char str []= "Hello World!";
-    list = ft_lstnew_node(str);
-    printf("%s\n", list->content);
-    return (0);
-}
-*/

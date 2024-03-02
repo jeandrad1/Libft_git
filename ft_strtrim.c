@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/15 22:48:17 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/17 12:02:36 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:10:05 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,3 @@ char	*ft_strtrim(const char *s1, const char *set)
 	ft_strlcpy(res, s1, len + 1);
 	return (res);
 }
-/*
-#include <stdio.h>
-
-int main() {
-    char const *s1 = "abcde98765fghijklm123abc";
-    char const *set = "abc";
-    char *p_trim;
-    p_trim = ft_strtrim(s1, set);
-    printf("test: %s\n", p_trim);
-    return 0;
-}
-*/

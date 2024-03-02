@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:53:20 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/19 10:31:20 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:08:22 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,16 +30,3 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(nb + '0', fd);
 }
-/*
-int main()
-{
-    int i = -123456789;
-    while (i < 123456789)
-    {
-        ft_putnbr_fd(i, 1);
-        ft_putchr_fd('\n', 1);
-        i++;
-    }
-    return (0);
-}
-*/

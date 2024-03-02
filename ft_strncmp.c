@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 10:20:32 by jeandrad          #+#    #+#             */
-/*   Updated: 2023/12/12 10:20:34 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:09:50 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,3 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	}
 	return (r);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int main(void) {
-	const char *str1 = "Hello ";
-	const char *str2 = "Hello";
-	int n = 6;
-	int result = ft_strncmp(str1, str2, n);
-	
-	printf("Result: %d\n", result);
-	printf("Result: %d\n", strncmp(str1,str2,n));
-
-	return (0);
-}
-*/
