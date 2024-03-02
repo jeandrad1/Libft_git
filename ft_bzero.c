@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 09:43:54 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/03/02 11:12:29 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:11:56 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,3 @@ void	ft_bzero(void *str, size_t n)
 		i++;
 	}
 }
-
