@@ -6,7 +6,7 @@
 /*   By: jeandrad <jeandrad@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 09:27:44 by jeandrad          #+#    #+#             */
-/*   Updated: 2024/03/02 13:20:12 by jeandrad         ###   ########.fr       */
+/*   Updated: 2024/03/02 13:31:17 by jeandrad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,11 @@ void	*ft_calloc(size_t num, size_t size)
 
 	total_size = num * size;
 	ptr = malloc(total_size);
+	if (ptr)
+	{
+		free (ptr);
+		return (0);
+	}
 	if (ptr != NULL)
 	{
 		ft_memset(ptr, 0, total_size);
